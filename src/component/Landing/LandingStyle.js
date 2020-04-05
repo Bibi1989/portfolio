@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   max-height: 100vh;
   min-height: 100vh;
+  padding-top: 1%;
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
@@ -11,5 +12,5 @@ export const Container = styled.div`
     rgba(148, 187, 233, 1) 100%
   );
 
-  position: relative;
+  /* position: relative; */
 `;

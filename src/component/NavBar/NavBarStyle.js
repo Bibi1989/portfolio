@@ -1,20 +1,35 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  width: 100%;
-  padding: 0 10%;
-  background: ${(props) =>
-    props.background ? props.background : "transparent"};
+  width: 80%;
+  padding: 1px 10%;
+  background: ${(props) => (props.background ? props.background : "white")};
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  transition: all 0.6s ease-in-out;
+
+  &.nav-dark {
+    background: #444;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    color: #eee;
+  }
 `;
 
 export const Logo = styled.h3`
-  color: #eee;
+  color: #444;
   text-transform: uppercase;
   align-self: center;
   margin: 0;
+
+  &.sticky {
+    color: #eee;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -35,10 +50,16 @@ export const List = styled.li`
     transition: all 0.5s ease-in-out;
   }
 
-  .link {
+  .sticky {
     display: block;
     text-transform: uppercase;
     color: #eee;
+  }
+
+  .link {
+    display: block;
+    text-transform: uppercase;
+    color: #444;
   }
 `;
 

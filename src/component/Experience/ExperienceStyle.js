@@ -6,12 +6,21 @@ export const Container = styled.div`
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  padding: 1.5em;
+`;
+
+export const H1 = styled.h1`
+  text-align: center;
+  color: #d4e0ff;
+  font-size: 2.7em;
+  font-weight: 700;
+  mix-blend-mode: screen;
 `;
 export const Div = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 45% 10% 45%;
-  height: 80vh;
+  height: 100vh;
 `;
 export const DateTime = styled.div`
   width: 100%;
@@ -20,16 +29,16 @@ export const DateTime = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 15% 0;
+  padding: 18% 0;
   /* background: black; */
 
   p {
     color: #d4e0ff;
     font-size: 1.3em;
     font-weight: 700;
+    margin: 0 !important;
     mix-blend-mode: screen;
-    position: relative;
-    ::after {
+    /* ::after {
       content: "";
       position: absolute;
       top: 5%;
@@ -39,7 +48,7 @@ export const DateTime = styled.div`
       border: 4px solid #d4e0ff;
       border-radius: 50%;
       background: whitesmoke;
-    }
+    } */
   }
 `;
 export const Divide = styled.div`
@@ -59,6 +68,19 @@ export const Divide = styled.div`
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32% 0;
+
+    span {
+      width: 20px;
+      height: 20px;
+      border: 4px solid #d4e0ff;
+      border-radius: 50%;
+      background: whitesmoke;
+    }
   }
 `;
 export const Work = styled.div`
@@ -67,7 +89,7 @@ export const Work = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 15% 10% 15% 0;
+  padding: 17.5% 10% 8% 0;
   /* background: black; */
 
   p {
@@ -83,12 +105,12 @@ export const Work = styled.div`
     span:nth-child(2) {
       color: #d4e0ff;
       mix-blend-mode: screen;
-      padding-top: 0.7em;
+      padding-top: 0.6em;
     }
     span:nth-child(3) {
       color: #d4e0ff;
       mix-blend-mode: screen;
-      padding-top: 0.7em;
+      padding-top: 0.6em;
     }
   }
 `;
