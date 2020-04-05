@@ -11,8 +11,8 @@ export const Container = styled.div`
   grid-gap: 2em;
   position: absolute;
   top: 25%;
-  left: 12%;
-  right: 12%;
+  left: 10%;
+  right: 10%;
 `;
 
 export const Image = styled.div`

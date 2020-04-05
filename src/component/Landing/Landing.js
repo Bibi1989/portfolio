@@ -3,10 +3,10 @@ import { Container } from "./LandingStyle";
 import NavBar from "../NavBar/NavBar";
 import Description from "../Description/Description";
 
-const Landing = ({ addClass }) => {
+const Landing = () => {
   return (
     <Container>
-      <NavBar addClass={addClass} />
+      {/* <NavBar addClass={addClass} /> */}
       <Description />
     </Container>
   );

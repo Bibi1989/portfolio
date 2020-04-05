@@ -7,13 +7,23 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  position: sticky;
+  position: fixed;
+  left: 10%;
+  right: 10%;
   z-index: 20;
-  top: 0;
+  top: 2%;
   transition: all 0.6s ease-in-out;
 
   &.nav-dark {
+    background: #444;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+    color: #eee;
+  }
+  .show {
     background: #444;
     width: 100%;
     transition: all 0.6s ease-in-out;
@@ -46,7 +56,8 @@ export const List = styled.li`
   padding: 2em 2.5em;
 
   &.active {
-    border-bottom: 2px solid #eee;
+    border-bottom: ${(props) =>
+      props.borderColor ? "2px solid #eee" : "2px solid #444"};
     transition: all 0.5s ease-in-out;
   }
 

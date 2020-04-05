@@ -4,7 +4,7 @@ import { useIntersection } from "react-use";
 import { Nav, Logo, NavList, List } from "./NavBarStyle";
 import Section2 from "../Section2/Section2";
 
-const NavBar = ({ addClass }) => {
+const NavBar = ({ addClass, show }) => {
   // : (refList.current.className = "");
   const [add, setAdd] = useState({
     home: true,
@@ -12,12 +12,13 @@ const NavBar = ({ addClass }) => {
     portfolio: false,
     contact: false,
   });
-  console.log(addClass);
+  console.log(show);
   return (
-    <Nav className={addClass ? "nav-dark" : ""}>
-      <Logo>portfolio</Logo>
+    <Nav className={addClass ? addClass : addClass}>
+      <Logo className={addClass ? "sticky" : ""}>portfolio</Logo>
       <NavList className={addClass ? "sticky" : ""}>
         <List
+          borderColor={addClass && "#eee"}
           className={add.home && "active"}
           onClick={() => setAdd({ home: true })}
         >
@@ -26,6 +27,7 @@ const NavBar = ({ addClass }) => {
           </Link>
         </List>
         <List
+          borderColor={addClass && "#eee"}
           className={add.skill && "active"}
           onClick={() => setAdd({ skill: true })}
         >
@@ -34,6 +36,7 @@ const NavBar = ({ addClass }) => {
           </Link>
         </List>
         <List
+          borderColor={addClass && "#eee"}
           className={add.portfolio && "active"}
           onClick={() => setAdd({ portfolio: true })}
         >
@@ -42,6 +45,7 @@ const NavBar = ({ addClass }) => {
           </Link>
         </List>
         <List
+          borderColor={addClass && "#eee"}
           className={add.contact && "active"}
           onClick={() => setAdd({ contact: true })}
         >
