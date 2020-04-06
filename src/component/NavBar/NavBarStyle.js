@@ -7,6 +7,8 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 15px #999;
+  border-radius: 0.25em;
   position: fixed;
   left: 10%;
   right: 10%;
@@ -17,6 +19,7 @@ export const Nav = styled.nav`
   &.nav-dark {
     background: #444;
     width: 100%;
+    border-radius: 0;
     left: 0;
     right: 0;
     top: 0;

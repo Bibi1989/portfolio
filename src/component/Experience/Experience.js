@@ -3,14 +3,14 @@ import { Div, DateTime, Divide, Work, Container, H1 } from "./ExperienceStyle";
 
 const Experience = () => {
   return (
-    <Container>
+    <Container data-aos='zoom-in'>
       <H1>My Tech Experience</H1>
       <Div>
         <DateTime>
-          <p>March 2020 to present</p>
-          <p>October 2019 to present</p>
-          <p>March 2019 to present</p>
-          <p>March 2019 to present</p>
+          <p data-aos='fade-left'>March 2020 to present</p>
+          <p data-aos='fade-left'>October 2019 to present</p>
+          <p data-aos='fade-left'>March 2019 to present</p>
+          <p data-aos='fade-left'>March 2019 to present</p>
         </DateTime>
         <Divide>
           <div className='line'>
@@ -21,7 +21,7 @@ const Experience = () => {
           </div>
         </Divide>
         <Work>
-          <p>
+          <p data-aos='fade-right'>
             <span>Fichaya Lifestyle Technology Limited</span>
             <span>Frontend Software Engineer</span>
             <span>
@@ -30,7 +30,7 @@ const Experience = () => {
               etc...
             </span>
           </p>
-          <p>
+          <p data-aos='fade-right'>
             <span>Decagon Learning Institute.</span>
             <span>Software Engineer</span>
             <span>
@@ -39,7 +39,7 @@ const Experience = () => {
               restful api, graphql, postgresql, mongoDB
             </span>
           </p>
-          <p>
+          <p data-aos='fade-right'>
             <span>Decagon Learning Institute.</span>
             <span>Software Engineer</span>
             <span>
@@ -48,7 +48,7 @@ const Experience = () => {
               restful api, graphql, postgresql, mongoDB
             </span>
           </p>
-          <p>
+          <p data-aos='fade-right'>
             <span>Decagon Learning Institute.</span>
             <span>Software Engineer</span>
             <span>

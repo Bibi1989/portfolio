@@ -28,7 +28,8 @@ export const DateTime = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: ${(props) =>
+    props.justify ? props.justify : "space-between"};
   padding: 18% 0;
   /* background: black; */
 
@@ -38,17 +39,6 @@ export const DateTime = styled.div`
     font-weight: 700;
     margin: 0 !important;
     mix-blend-mode: screen;
-    /* ::after {
-      content: "";
-      position: absolute;
-      top: 5%;
-      right: -49%;
-      width: 20px;
-      height: 20px;
-      border: 4px solid #d4e0ff;
-      border-radius: 50%;
-      background: whitesmoke;
-    } */
   }
 `;
 export const Divide = styled.div`
@@ -63,7 +53,7 @@ export const Divide = styled.div`
     width: 0.6em;
     color: blue;
     background: whitesmoke;
-    opacity: 0.8;
+    opacity: 0.5;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -71,15 +61,16 @@ export const Divide = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: ${(props) =>
+      props.justify ? props.justify : "space-between"};
     padding: 32% 0;
 
     span {
       width: 20px;
       height: 20px;
-      border: 4px solid #d4e0ff;
-      border-radius: 50%;
       background: whitesmoke;
+      border: 0.25em solid rgba(0, 255, 0, 0.5);
+      border-radius: 50%;
     }
   }
 `;
@@ -88,7 +79,8 @@ export const Work = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: ${(props) =>
+    props.justify ? props.justify : "space-between"};
   padding: 17.5% 10% 8% 0;
   /* background: black; */
 
@@ -97,18 +89,18 @@ export const Work = styled.div`
     flex-direction: column;
 
     span:nth-child(1) {
-      color: #d4e0ff;
+      color: #f8f6ff;
       font-size: 1.7em;
       font-weight: 700;
       mix-blend-mode: screen;
     }
     span:nth-child(2) {
-      color: #d4e0ff;
+      color: #f8f6ff;
       mix-blend-mode: screen;
       padding-top: 0.6em;
     }
     span:nth-child(3) {
-      color: #d4e0ff;
+      color: #f8f6ff;
       mix-blend-mode: screen;
       padding-top: 0.6em;
     }

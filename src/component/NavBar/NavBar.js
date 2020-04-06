@@ -14,7 +14,7 @@ const NavBar = ({ addClass, show }) => {
   });
   console.log(show);
   return (
-    <Nav className={addClass ? addClass : addClass}>
+    <Nav className={addClass ? addClass : addClass} data-aos='flip-right'>
       <Logo className={addClass ? "sticky" : ""}>portfolio</Logo>
       <NavList className={addClass ? "sticky" : ""}>
         <List

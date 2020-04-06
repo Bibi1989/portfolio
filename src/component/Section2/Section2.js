@@ -3,6 +3,8 @@ import styled from "styled-components";
 import About from "../About/About";
 import Skill from "../Skill/Skill";
 
+const welcome = "../../../fixed.jpg";
+
 const Section2 = () => {
   return (
     <div id='skill'>
@@ -15,10 +17,15 @@ const Section2 = () => {
 };
 
 const Container = styled.div`
-  padding: 30vh 10% 5% 10%;
+  padding: 32vh 10% 5% 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5%5ch;
+  /* background: url(${welcome});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 82%;
+  background-attachment: fixed; */
 `;
 
 export default Section2;
