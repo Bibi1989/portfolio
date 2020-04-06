@@ -40,17 +40,17 @@ export const FormDiv = styled.div`
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    color: #eee;
+    color: rgb(238, 174, 202);
 
     &::placeholder {
-      color: #eee;
+      color: rgb(238, 174, 202);
     }
 
     &:focus::placeholder {
       transform: translate(-0.5%, -100%);
       transition: all 0.5s ease-in-out;
       background: transparent;
-      color: #eee;
+      color: rgb(238, 174, 202);
     }
   }
 `;
@@ -59,7 +59,7 @@ export const Label = styled.label`
   align-self: flex-start;
   font-size: 0.9em;
   padding-bottom: 0.4em;
-  color: #eee;
+  color: rgb(238, 174, 202);
   /* color: #00ad5e; */
 `;
 
@@ -73,9 +73,9 @@ export const Input = styled.input`
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  color: #eee;
+  color: rgb(238, 174, 202);
   &::placeholder {
-    color: #eee;
+    color: rgb(238, 174, 202);
   }
   &.error {
     border: 1px solid red;
@@ -95,14 +95,14 @@ export const Input = styled.input`
 export const H2 = styled.h2`
   text-align: center;
   font-size: 2.5em;
-  color: #eee;
+  color: rgb(238, 174, 202);
 `;
 
 export const Button = styled.button`
   display: block;
   background: rgb(238, 174, 202);
   background: radial-gradient(
-    circle,
+    to left,
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
