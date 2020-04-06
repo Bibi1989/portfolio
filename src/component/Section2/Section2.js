@@ -17,7 +17,9 @@ const Section2 = () => {
 };
 
 const Container = styled.div`
-  padding: 32vh 10% 5% 10%;
+  padding: 32vh 0 5% 0;
+  max-width: 90em;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5%5ch;

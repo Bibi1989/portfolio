@@ -2,8 +2,9 @@ import styled from "styled-components";
 // const welcome = "../../../fixed.jpg";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100vh;
+  max-width: 90em;
+  max-height: 100vh;
+  margin: auto;
   padding: ${(props) => (props.padding ? props.padding : "6em 0em")};
   display: flex;
   justify-content: center;
