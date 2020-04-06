@@ -7,11 +7,6 @@ export const Container = styled.div`
   padding: ${(props) => (props.padding ? props.padding : "6em 0em")};
   display: flex;
   justify-content: center;
-  /* background: url(${welcome});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  background-attachment: fixed; */
 `;
 
 export const FormContainer = styled.div`
