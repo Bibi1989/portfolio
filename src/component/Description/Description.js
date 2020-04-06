@@ -55,10 +55,13 @@ const Description = () => {
           >
             <Icon name='linkedin' size='big' color='blue' />
           </a>
-          <a className='link' href='#'>
+          <a className='link' href='https://twitter.com/BAremieye'>
             <Icon name='twitter' size='big' color='blue' />
           </a>
-          <a className='link' href='#'>
+          <a
+            className='link'
+            href='https://github.com/Bibi1989?tab=repositories'
+          >
             <Icon name='github' size='big' color='black' />
           </a>
         </Icons>
