@@ -7,6 +7,7 @@ import Section2 from "./component/Section2/Section2";
 import styled from "styled-components";
 import NavBar from "./component/NavBar/NavBar";
 import Description from "./component/Description/Description";
+import Portfolio from "./component/Portfolios/index";
 import Contact from "./component/ContactForm/Contact";
 import Section3 from "./component/Section3/Section3";
 import Education from "./component/Education/Education";
@@ -65,6 +66,7 @@ function App() {
               {exp.exp && <Experience />}
               {exp.edu && <Education />}
             </EduExp>
+            <Portfolio />
             <Contact />
           </div>
         </Route>

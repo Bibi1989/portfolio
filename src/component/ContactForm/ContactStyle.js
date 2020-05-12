@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: ${(props) => (props.padding ? props.padding : "6em 0em")};
   display: flex;
   justify-content: center;
+  padding: 2em;
 `;
 
 export const FormContainer = styled.div`

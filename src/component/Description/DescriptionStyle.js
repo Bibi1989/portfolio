@@ -1,10 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const welcome = "../../../landing2.jpg";
 
+const move = keyframes`
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+`;
+
 export const Container = styled.div`
   background: #ffffff;
-  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
   box-shadow: 0 0 20px #bbb;
   border-radius: 1em;
   padding: 2em;
@@ -15,6 +28,7 @@ export const Container = styled.div`
   top: 25%;
   left: 10%;
   right: 10%;
+  animation: ${move} 6s ease-in-out infinite;
 `;
 
 export const Image = styled.div`
@@ -24,12 +38,7 @@ export const Image = styled.div`
   background-size: 82%;
   background-attachment: fixed;
   width: 100%;
-  max-height: 100%;
-  /* img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  } */
+  height: 100%;
 `;
 
 export const Details = styled.div`
