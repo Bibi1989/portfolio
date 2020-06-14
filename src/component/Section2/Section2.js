@@ -22,12 +22,13 @@ const Container = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5%5ch;
-  /* background: url(${welcome});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 82%;
-  background-attachment: fixed; */
+  grid-gap: 2em;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 1em;
+  }
 `;
 
 export default Section2;

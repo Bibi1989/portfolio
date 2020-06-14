@@ -16,12 +16,6 @@ export const H1 = styled.h1`
   font-weight: 700;
   mix-blend-mode: screen;
 `;
-export const Div = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  height: 100vh;
-`;
 export const DateTime = styled.div`
   width: 100%;
   justify-self: flex-end;
@@ -103,6 +97,24 @@ export const Work = styled.div`
       color: #f8f6ff;
       mix-blend-mode: screen;
       padding-top: 0.6em;
+    }
+  }
+`;
+
+export const Div = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  height: 100vh;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+
+    ${DateTime} {
+      display: none;
+    }
+    ${Divide} {
+      display: none;
     }
   }
 `;

@@ -9,8 +9,7 @@ const Experience = () => {
         <DateTime>
           <p data-aos='fade-left'>March 2020 to present</p>
           <p data-aos='fade-left'>October 2019 to present</p>
-          <p data-aos='fade-left'>March 2019 to present</p>
-          <p data-aos='fade-left'>March 2019 to present</p>
+          <p data-aos='fade-left'>Feb 2018 to present</p>
         </DateTime>
         <Divide>
           <div className='line'>
@@ -40,16 +39,7 @@ const Experience = () => {
             </span>
           </p>
           <p data-aos='fade-right'>
-            <span>Decagon Learning Institute.</span>
-            <span>Software Engineer</span>
-            <span>
-              Responsible for building web application from client to server
-              side using technology like javascript, react, node/express,
-              restful api, graphql, postgresql, mongoDB
-            </span>
-          </p>
-          <p data-aos='fade-right'>
-            <span>Decagon Learning Institute.</span>
+            <span>Freelance & Personal Projects</span>
             <span>Software Engineer</span>
             <span>
               Responsible for building web application from client to server

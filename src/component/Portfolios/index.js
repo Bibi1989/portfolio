@@ -56,6 +56,10 @@ export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const Content = styled.div`
   position: absolute;
