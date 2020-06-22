@@ -1,8 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useIntersection } from "react-use";
 import { Nav, Logo, NavList, List } from "./NavBarStyle";
-import Section2 from "../Section2/Section2";
 
 const NavBar = ({ addClass, show }) => {
   // : (refList.current.className = "");

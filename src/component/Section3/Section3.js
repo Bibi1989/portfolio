@@ -2,7 +2,6 @@ import React from "react";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Route, Switch } from "react-router-dom";
-import { Button } from "semantic-ui-react";
 
 const Section3 = () => {
   return (

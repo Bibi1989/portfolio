@@ -14,8 +14,6 @@ import {
 } from "./DescriptionStyle";
 import { Icon } from "semantic-ui-react";
 
-const pic = "../../../landing.jpg";
-
 const Description = () => {
   return (
     <Container data-aos='zoom-in'>

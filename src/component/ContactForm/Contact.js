@@ -5,7 +5,6 @@ import {
   H2,
   Form,
   FormDiv,
-  Label,
   Input,
   Button,
 } from "./ContactStyle";
@@ -19,7 +18,6 @@ const Contact = () => {
     message: "",
   });
   const [msg, setMsg] = useState("");
-  const [error, setError] = useState("");
 
   const handleMessage = ({ target: { name, value } }) => {
     setMessages({

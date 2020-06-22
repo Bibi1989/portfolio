@@ -3,8 +3,6 @@ import styled from "styled-components";
 import About from "../About/About";
 import Skill from "../Skill/Skill";
 
-const welcome = "../../../fixed.jpg";
-
 const Section2 = () => {
   return (
     <div id='skill'>
