@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
+
+const liveProjects = [
+  {
+    pic: "./images/fichaya.png",
+    content: "https:/fichaya.com",
+    name: "Fichaya",
+  },
+];
 
 const images = [
   {
@@ -23,23 +31,64 @@ const images = [
     content: "https://musicapps.netlify.app/",
     name: "Music App",
   },
+  {
+    pic: "./images/gigfinder.png",
+    content: "https://gig-finder.netlify.app/home",
+    name: "Gig Finder",
+  },
+  {
+    pic: "./images/petshopify.png",
+    content: "https://petshopify.netlify.app/",
+    name: "Shop Pets",
+  },
 ];
 
 const Portfolio = () => {
   return (
-    <Container>
-      <H1>My PortFolios</H1>
+    <Container id='portfolio'>
+      <H1>Live Projects</H1>
+      <Row>
+        {liveProjects.map((image) => (
+          <Col>
+            <Image>
+              <img src={image.pic} alt='product management' />
+              <Overlay>
+                <Button as='a' href={image.content} target='blank'>
+                  {image.name}
+                </Button>
+              </Overlay>
+            </Image>
+            <Content>
+              <p className='title'>Name: {image.name}</p>
+              <p>
+                <a href={image.content} target='blank'>
+                  <Icon name='linkify' /> Visit
+                </a>
+              </p>
+            </Content>
+          </Col>
+        ))}
+      </Row>
+      <H1>Personal Projects</H1>
       <Row>
         {images.map((image) => (
           <Col>
             <Image>
               <img src={image.pic} alt='product management' />
-              <Content>
-                <Button as='a' href={image.content}>
+              <Overlay>
+                <Button as='a' href={image.content} target='blank'>
                   {image.name}
                 </Button>
-              </Content>
+              </Overlay>
             </Image>
+            <Content>
+              <p className='title'>Name: {image.name}</p>
+              <p>
+                <a href={image.content} target='blank'>
+                  <Icon name='linkify' /> Visit
+                </a>
+              </p>
+            </Content>
           </Col>
         ))}
       </Row>
@@ -61,7 +110,27 @@ export const Row = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
 export const Content = styled.div`
+  padding: 1em;
+
+  a {
+    display: block;
+    padding: 0.6em 2em;
+    background: orangered;
+    text-align: center;
+    border-radius: 0.3em;
+    color: white;
+    font-size: 1.3em;
+  }
+
+  .title {
+    color: teal;
+    text-align: center;
+  }
+`;
+
+export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +149,7 @@ export const Col = styled.div`
   border-radius: 0.3em;
   overflow: hidden;
 
-  &:hover ${Content} {
+  &:hover ${Overlay} {
     opacity: 1;
     pointer-events: visible;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);

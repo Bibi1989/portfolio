@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   width: 80%;
-  padding: 1px 2%;
+  padding: 0px 2%;
   background: ${(props) => (props.background ? props.background : "white")};
   display: flex;
   justify-content: space-between;
@@ -56,7 +56,7 @@ export const NavList = styled.ul`
 `;
 
 export const List = styled.li`
-  padding: 2em 2.5em;
+  padding: 1em 2.5em;
 
   &.active {
     border-bottom: ${(props) =>

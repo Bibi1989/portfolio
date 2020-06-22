@@ -67,7 +67,7 @@ function App() {
               {exp.edu && <Education />}
             </EduExp>
             <Portfolio />
-            <Contact />
+            {/* <Contact /> */}
           </div>
         </Route>
       </Switch>

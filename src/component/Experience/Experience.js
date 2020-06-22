@@ -3,7 +3,7 @@ import { Div, DateTime, Divide, Work, Container, H1 } from "./ExperienceStyle";
 
 const Experience = () => {
   return (
-    <Container data-aos='zoom-in'>
+    <Container data-aos='zoom-in' id='experience'>
       <H1>My Tech Experience</H1>
       <Div>
         <DateTime>

@@ -31,27 +31,27 @@ const NavBar = ({ addClass, show }) => {
           className={add.skill && "active"}
           onClick={() => setAdd({ skill: true })}
         >
-          <Link to='/' className={addClass ? "sticky" : "link"}>
+          <a href='#skill' className={addClass ? "sticky" : "link"}>
             my objective / skills
-          </Link>
+          </a>
         </List>
         <List
           borderColor={addClass && "#eee"}
           className={add.portfolio && "active"}
           onClick={() => setAdd({ portfolio: true })}
         >
-          <Link to='/' className={addClass ? "sticky" : "link"}>
+          <a href='#portfolio' className={addClass ? "sticky" : "link"}>
             portfolio
-          </Link>
+          </a>
         </List>
         <List
           borderColor={addClass && "#eee"}
           className={add.contact && "active"}
           onClick={() => setAdd({ contact: true })}
         >
-          <Link to='/' className={addClass ? "sticky" : "link"}>
-            contact
-          </Link>
+          <a href='#experience' className={addClass ? "sticky" : "link"}>
+            Experience/Education
+          </a>
         </List>
       </NavList>
     </Nav>
