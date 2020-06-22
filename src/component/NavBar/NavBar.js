@@ -10,11 +10,10 @@ const NavBar = ({ addClass, show }) => {
     portfolio: false,
     contact: false,
   });
-  console.log(show);
   return (
     <Nav className={addClass ? addClass : addClass} data-aos='flip-right'>
       <Logo className={addClass ? "sticky" : ""}>bibirinbulu aremieye</Logo>
-      <NavList className={addClass ? "sticky" : ""}>
+      <NavList className={addClass ? "sticky" : "nav"}>
         <List
           borderColor={addClass && "#eee"}
           className={add.home && "active"}

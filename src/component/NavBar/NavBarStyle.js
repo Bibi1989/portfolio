@@ -32,6 +32,12 @@ export const Nav = styled.nav`
     transition: all 0.6s ease-in-out;
     color: #eee;
   }
+
+  @media (max-width: 768px) {
+    &.nav-dark {
+      display: none;
+    }
+  }
 `;
 
 export const Logo = styled.h3`
@@ -39,6 +45,7 @@ export const Logo = styled.h3`
   text-transform: uppercase;
   align-self: center;
   margin: 0;
+  padding: 1em;
 
   &.sticky {
     color: #eee;
@@ -52,6 +59,13 @@ export const NavList = styled.ul`
 
   &:last-child {
     padding-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    &.nav,
+    &.nav-dark {
+      display: none;
+    }
   }
 `;
 
