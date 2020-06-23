@@ -61,6 +61,18 @@ export const NavList = styled.ul`
     padding-left: 0;
   }
 
+  .link {
+    display: block;
+    text-transform: uppercase;
+    color: #444;
+  }
+
+  .sticky {
+    display: block;
+    text-transform: uppercase;
+    color: #eee;
+  }
+
   @media (max-width: 768px) {
     &.nav,
     &.nav-dark {
@@ -82,12 +94,6 @@ export const List = styled.li`
     display: block;
     text-transform: uppercase;
     color: #eee;
-  }
-
-  .link {
-    display: block;
-    text-transform: uppercase;
-    color: #444;
   }
 `;
 

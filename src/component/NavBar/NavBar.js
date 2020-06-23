@@ -14,42 +14,42 @@ const NavBar = ({ addClass, show }) => {
     <Nav className={addClass ? addClass : addClass} data-aos='flip-right'>
       <Logo className={addClass ? "sticky" : ""}>bibirinbulu aremieye</Logo>
       <NavList className={addClass ? "sticky" : "nav"}>
-        <List
-          borderColor={addClass && "#eee"}
-          className={add.home && "active"}
-          onClick={() => setAdd({ home: true })}
-        >
-          <Link to='/' className={addClass ? "sticky" : "link"}>
+        <a href='#home' className={addClass ? "sticky" : "link"}>
+          <List
+            borderColor={addClass && "#eee"}
+            className={add.home && "active"}
+            onClick={() => setAdd({ home: true })}
+          >
             home
-          </Link>
-        </List>
-        <List
-          borderColor={addClass && "#eee"}
-          className={add.skill && "active"}
-          onClick={() => setAdd({ skill: true })}
-        >
-          <a href='#skill' className={addClass ? "sticky" : "link"}>
-            my objective / skills
-          </a>
-        </List>
-        <List
-          borderColor={addClass && "#eee"}
-          className={add.portfolio && "active"}
-          onClick={() => setAdd({ portfolio: true })}
-        >
-          <a href='#portfolio' className={addClass ? "sticky" : "link"}>
+          </List>
+        </a>
+        <a href='#skill' className={addClass ? "sticky" : "link"}>
+          <List
+            borderColor={addClass && "#eee"}
+            className={add.skill && "active"}
+            onClick={() => setAdd({ skill: true })}
+          >
+            skills
+          </List>
+        </a>
+        <a href='#portfolio' className={addClass ? "sticky" : "link"}>
+          <List
+            borderColor={addClass && "#eee"}
+            className={add.portfolio && "active"}
+            onClick={() => setAdd({ portfolio: true })}
+          >
             portfolio
-          </a>
-        </List>
-        <List
-          borderColor={addClass && "#eee"}
-          className={add.contact && "active"}
-          onClick={() => setAdd({ contact: true })}
-        >
-          <a href='#experience' className={addClass ? "sticky" : "link"}>
-            Experience/Education
-          </a>
-        </List>
+          </List>
+        </a>
+        <a href='#experience' className={addClass ? "sticky" : "link"}>
+          <List
+            borderColor={addClass && "#eee"}
+            className={add.contact && "active"}
+            onClick={() => setAdd({ contact: true })}
+          >
+            Experience
+          </List>
+        </a>
       </NavList>
     </Nav>
   );

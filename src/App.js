@@ -30,7 +30,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/'>
-          <div className='App'>
+          <div className='App' id='home'>
             <Div></Div>
             <NavBar addClass={addClass} />
             <Description />
