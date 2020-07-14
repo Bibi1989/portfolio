@@ -33,7 +33,7 @@ const images = [
   },
   {
     pic: "./images/gigfinder.png",
-    content: "https://gig-finder.netlify.app/home",
+    content: "https://youcanhireme.netlify.app/home",
     name: "Gig Finder",
   },
   {
