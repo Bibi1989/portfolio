@@ -34,7 +34,7 @@ const images = [
   {
     pic: "./images/gigfinder.png",
     content: "https://youcanhireme.netlify.app/home",
-    name: "Gig Finder",
+    name: "You Can Hire A Dev",
   },
   {
     pic: "./images/petshopify.png",
