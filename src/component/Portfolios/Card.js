@@ -35,7 +35,7 @@ const Card = ({ image }) => {
             onClick={handleClick}
           >
             <Icon name='dropdown' />
-            Click to see tools
+            {activeIndex !== 0 ? "Click to see tools" : "Click to hide tools"}
           </Accordion.Title>
           <Accordion.Content active={activeIndex === 0}>
             <ul>
