@@ -100,6 +100,10 @@ export default Portfolio;
 
 export const Container = styled.div`
   padding: 3% 10%;
+
+  @media (max-width: 769px) {
+    padding: 3% 10px;
+  }
 `;
 export const Row = styled.div`
   display: grid;

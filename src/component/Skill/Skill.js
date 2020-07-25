@@ -4,7 +4,7 @@ import ProgressBars from "./ProgressBars";
 
 const Skill = () => {
   return (
-    <Container data-aos='zoom-in'>
+    <Container>
       <h1>Skills</h1>
       <>
         <H2>HTML 95%</H2>

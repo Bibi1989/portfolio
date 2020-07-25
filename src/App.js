@@ -39,13 +39,33 @@ function App() {
               <div className='exp'>
                 <Button
                   onClick={() => setExp({ exp: true })}
-                  style={exp.exp ? { background: "teal", color: "#fff" } : {}}
+                  style={
+                    exp.exp
+                      ? {
+                          background: "teal",
+                          color: "#fff",
+                          padding: "10px 16px",
+                        }
+                      : {
+                          padding: "10px 16px",
+                        }
+                  }
                 >
                   Experience
                 </Button>
                 <Button
                   onClick={() => setExp({ edu: true })}
-                  style={exp.edu ? { background: "teal", color: "#fff" } : {}}
+                  style={
+                    exp.edu
+                      ? {
+                          background: "teal",
+                          color: "#fff",
+                          padding: "10px 16px",
+                        }
+                      : {
+                          padding: "10px 16px",
+                        }
+                  }
                 >
                   Education
                 </Button>

@@ -45,6 +45,10 @@ export const H1 = styled.h1`
   color: #333;
   font-size: 3em;
   text-transform: uppercase;
+
+  @media (max-width: 960px) {
+    font-size: 2em;
+  }
 `;
 export const H3 = styled.h3`
   color: #333;
@@ -62,6 +66,11 @@ export const List = styled.li`
 `;
 export const Span = styled.span`
   padding-left: 2em;
+  font-size: 1em;
+
+  @media (max-width: 960px) {
+    font-size: 12px;
+  }
 `;
 export const Icons = styled.span`
   display: flex;

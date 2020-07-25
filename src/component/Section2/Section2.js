@@ -26,6 +26,7 @@ const Container = styled.div`
     grid-template-columns: 1fr;
     width: 100%;
     padding: 1em;
+    padding: 5em 10px 2em 10px;
   }
 `;
 
