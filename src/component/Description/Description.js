@@ -14,10 +14,14 @@ import {
 } from "./DescriptionStyle";
 import { Icon } from "semantic-ui-react";
 
+const welcome = "../../../landing.jpg";
+
 const Description = () => {
   return (
     <Container data-aos='zoom-in'>
-      <Image>{/* <img src={pic} alt='My Picture' /> */}</Image>
+      <Image>
+        <img src={welcome} alt='' />
+      </Image>
       <Details>
         <P1>Hi, I am</P1>
         <H1>aremieye bibirinbulu</H1>

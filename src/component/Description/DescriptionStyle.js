@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const welcome = "../../../landing2.jpg";
-
 const move = keyframes`
   0%{
     transform: translateY(0px);
@@ -15,17 +13,17 @@ const move = keyframes`
 `;
 
 export const Image = styled.div`
-  background: url(${welcome});
-  background-repeat: no-repeat;
-  background-position-y: 10%;
-  background-size: 82%;
-  background-attachment: fixed;
   width: 100%;
-  height: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Details = styled.div`
-  padding-left: 15%;
+  padding-left: 1%;
   padding-right: 7%;
   display: flex;
   flex-direction: column;
@@ -100,10 +98,10 @@ export const Container = styled.div`
   max-height: 100vh;
   min-height: 100vh;
   box-shadow: 0 0 20px #bbb;
-  border-radius: 25% 1em 25% 1em;
+  border-radius: 25% 0.5em 25% 0.5em;
   padding: 0 2em 0 0;
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
   gap: 2em;
   position: absolute;
   top: 25%;
