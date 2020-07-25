@@ -30,6 +30,10 @@ export const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (max-width: 1200px) {
+    padding-left: 0;
+  }
 `;
 export const P1 = styled.p`
   color: #333;
@@ -76,6 +80,15 @@ export const Icons = styled.span`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 960px) {
+    justify-content: flex-start;
+
+    .link {
+      text-transform: none;
+      margin: 0;
+    }
+  }
+
   .link {
     text-transform: none;
     margin: 0 1em;
@@ -87,25 +100,28 @@ export const Container = styled.div`
   max-height: 100vh;
   min-height: 100vh;
   box-shadow: 0 0 20px #bbb;
-  border-radius: 1em;
-  padding: 2em;
+  border-radius: 25% 1em 25% 1em;
+  padding: 0 2em 0 0;
   display: grid;
   grid-template-columns: 55% 45%;
-  grid-gap: 2em;
+  gap: 2em;
   position: absolute;
   top: 25%;
   left: 10%;
   right: 10%;
   animation: ${move} 6s ease-in-out infinite;
+  overflow: hidden;
 
   @media (max-width: 769px) {
     grid-template-columns: 1fr;
+    gap: 1em;
     animation: none;
     top: 5%;
     left: 1em;
     right: 1em;
     padding: 0;
     max-height: 100%;
+    border-radius: 1em;
 
     ${Image} {
       display: none;

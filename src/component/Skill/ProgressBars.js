@@ -5,7 +5,7 @@ const ProgressBars = ({ width }) => {
   return (
     <Progress>
       <ProgressGray>
-        <ProgressColor width={width} data-aos='fade-right' />
+        <ProgressColor width={width} />
       </ProgressGray>
     </Progress>
   );

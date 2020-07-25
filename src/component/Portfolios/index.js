@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Icon, Accordion } from "semantic-ui-react";
+import { useState } from "react";
+import Card from "./Card";
 
 const liveProjects = [
   {
@@ -15,31 +17,43 @@ const images = [
     pic: "./images/productmanagement.png",
     content: "https://b-manager.netlify.app",
     name: "B Manager",
+    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
   },
   {
     pic: "./images/blog.png",
     content: "https://bibiblog.netlify.app/",
     name: "Bibi Ask",
+    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
   },
   {
     pic: "./images/erefashion.png",
     content: "https://ereshopify.netlify.app/",
     name: "Ere Place",
+    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
   },
   {
     pic: "./images/music.png",
     content: "https://musicapps.netlify.app/",
     name: "Music App",
+    tools: ["Reactjs/Redux", "Styled-components"],
   },
   {
     pic: "./images/gigfinder.png",
     content: "https://youcanhireme.netlify.app/home",
     name: "You Can Hire A Dev",
+    tools: ["Reactjs", "Node/Express", "Postgresql", "Sequelize ORM"],
   },
   {
     pic: "./images/petshopify.png",
     content: "https://petshopify.netlify.app/",
     name: "Shop Pets",
+    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "@Databases/pg ORM"],
+  },
+  {
+    pic: "./images/blog.png",
+    content: "https://youcanhireme.netlify.app/",
+    name: "Github Jobs",
+    tools: ["Vuejs"],
   },
 ];
 
@@ -49,7 +63,7 @@ const Portfolio = () => {
       <H1>Live Projects</H1>
       <Row>
         {liveProjects.map((image) => (
-          <Col>
+          <Col key={image.name}>
             <Image>
               <img src={image.pic} alt='product management' />
               <Overlay>
@@ -72,24 +86,7 @@ const Portfolio = () => {
       <H1>Personal Projects</H1>
       <Row>
         {images.map((image) => (
-          <Col>
-            <Image>
-              <img src={image.pic} alt='product management' />
-              <Overlay>
-                <Button as='a' href={image.content} target='blank'>
-                  {image.name}
-                </Button>
-              </Overlay>
-            </Image>
-            <Content>
-              <p className='title'>Name: {image.name}</p>
-              <p>
-                <a href={image.content} target='blank'>
-                  <Icon name='linkify' /> Visit
-                </a>
-              </p>
-            </Content>
-          </Col>
+          <Card image={image} />
         ))}
       </Row>
     </Container>
