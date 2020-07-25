@@ -128,24 +128,3 @@ export const H1 = styled.h1`
   font-size: 3em;
   color: #777;
 `;
-
-{
-  /* <Accordion>
-  <Accordion.Title
-    active={activeIndex === 0}
-    index={0}
-    onClick={handleClick}
-  >
-    <Icon name='dropdown' />
-                  What kinds of dogs are there?
-                </Accordion.Title>
-  <Accordion.Content active={activeIndex === 0}>
-    <p>
-      There are many breeds of dogs. Each breed varies in size and
-      temperament. Owners often select a breed of dog that they
-      find to be compatible with their own lifestyle and desires
-      from a companion.
-                  </p>
-  </Accordion.Content>
-</Accordion> */
-}

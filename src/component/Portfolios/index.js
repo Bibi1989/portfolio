@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, Accordion } from "semantic-ui-react";
-import { useState } from "react";
+import { Button, Icon } from "semantic-ui-react";
 import Card from "./Card";
 
 const liveProjects = [
