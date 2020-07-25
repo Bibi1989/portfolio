@@ -50,7 +50,7 @@ const images = [
   },
   {
     pic: "./images/blog.png",
-    content: "https://youcanhireme.netlify.app/",
+    content: "https://yourjobs.herokuapp.com/#/",
     name: "Github Jobs",
     tools: ["Vuejs"],
   },
