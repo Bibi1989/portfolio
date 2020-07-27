@@ -49,10 +49,16 @@ const images = [
     tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "@Databases/pg ORM"],
   },
   {
-    pic: "./images/blog.png",
+    pic: "./images/githubjob.png",
     content: "https://yourjobs.herokuapp.com/#/",
     name: "Github Jobs",
     tools: ["Vuejs"],
+  },
+  {
+    pic: "./images/covid19.png",
+    content: "http://update-covid19.netlify.app/",
+    name: "Github Jobs",
+    tools: ["Reactjs", "React Chartjs"],
   },
 ];
 
