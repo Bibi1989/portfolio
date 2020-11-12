@@ -3,64 +3,9 @@ import styled from "styled-components";
 import { Button, Icon } from "semantic-ui-react";
 import Card from "./Card";
 
-const liveProjects = [
-  {
-    pic: "./images/fichaya.png",
-    content: "https:/fichaya.com",
-    name: "Fichaya",
-  },
-];
+import {} from "./style";
 
-const images = [
-  {
-    pic: "./images/productmanagement.png",
-    content: "https://b-manager.netlify.app",
-    name: "B Manager",
-    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
-  },
-  {
-    pic: "./images/blog.png",
-    content: "https://bibiblog.netlify.app/",
-    name: "Bibi Ask",
-    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
-  },
-  {
-    pic: "./images/erefashion.png",
-    content: "https://ereshopify.netlify.app/",
-    name: "Ere Place",
-    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "Sequelize ORM"],
-  },
-  {
-    pic: "./images/music.png",
-    content: "https://musicapps.netlify.app/",
-    name: "Music App",
-    tools: ["Reactjs/Redux", "Styled-components"],
-  },
-  {
-    pic: "./images/gigfinder.png",
-    content: "https://youcanhireme.netlify.app/home",
-    name: "You Can Hire A Dev",
-    tools: ["Reactjs", "Node/Express", "Postgresql", "Sequelize ORM"],
-  },
-  {
-    pic: "./images/petshopify.png",
-    content: "https://petshopify.netlify.app/",
-    name: "Shop Pets",
-    tools: ["Reactjs/Redux", "Node/Express", "Postgresql", "@Databases/pg ORM"],
-  },
-  {
-    pic: "./images/githubjob.png",
-    content: "https://yourjobs.herokuapp.com/#/",
-    name: "Github Jobs",
-    tools: ["Vuejs"],
-  },
-  {
-    pic: "./images/covid19.png",
-    content: "http://update-covid19.netlify.app/",
-    name: "Github Jobs",
-    tools: ["Reactjs", "React Chartjs"],
-  },
-];
+import { liveProjects, images } from "./datas";
 
 const Portfolio = () => {
   return (

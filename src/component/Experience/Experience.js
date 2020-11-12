@@ -7,7 +7,8 @@ const Experience = () => {
       <H1>My Tech Experience</H1>
       <Div>
         <DateTime>
-          <p data-aos='fade-left'>March 2020 to present</p>
+          <p data-aos='fade-left'>August 2020 to present</p>
+          <p data-aos='fade-left'>March 2020 to July 2020</p>
           <p data-aos='fade-left'>October 2019 to present</p>
           <p data-aos='fade-left'>Feb 2018 to present</p>
         </DateTime>
@@ -20,6 +21,15 @@ const Experience = () => {
           </div>
         </Divide>
         <Work>
+          <p data-aos='fade-right'>
+            <span>Divergent</span>
+            <span>Full Stack Engineer</span>
+            <span>
+              Responsible for building web/mobile application and consuming backend
+              apis, using technology like typescript, graphql, hasura, nextjs, react, react-native, node/express,
+              etc...
+            </span>
+          </p>
           <p data-aos='fade-right'>
             <span>Fichaya Lifestyle Technology Limited</span>
             <span>Frontend Software Engineer</span>

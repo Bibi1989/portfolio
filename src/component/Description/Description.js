@@ -20,7 +20,7 @@ const Description = () => {
   return (
     <Container data-aos='zoom-in'>
       <Image>
-        <img src={welcome} alt='' />
+        <img src={welcome} alt='My Image' />
       </Image>
       <Details>
         <P1>Hi, I am</P1>
@@ -28,10 +28,9 @@ const Description = () => {
         <H3>fullstack software engineer</H3>
         <P2>
           I am a full stack software engineer,I am proficient in html, css,
-          css3, react.js, javascript, typescript, node/express.js, mongoDB,
-          postgresql, restful api, docker, CI/CD and graphql.I have done some
-          web applications for decagon learning institute, with technology like
-          python, react, node and mongoose/postgresql. and some E- commerce web
+          css3, react.js, react native, vuejs, javascript, typescript, node/express.js, mongoDB,
+          postgresql, restful api and graphql. I have done some
+          web applications for decagon learning institute, fichaya, dysh and client, with technology like, react, react native, vuejs, node and mongoose/postgresql. and some personal
           applications.
         </P2>
         <DetailList>

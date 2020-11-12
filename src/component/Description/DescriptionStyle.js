@@ -27,7 +27,7 @@ export const Details = styled.div`
   padding-right: 7%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   @media (max-width: 1200px) {
     padding-left: 0;
@@ -64,7 +64,7 @@ export const List = styled.li`
   color: #777;
   display: flex;
   align-items: center;
-  padding: 1em 0;
+  padding: 10px 0;
 `;
 export const Span = styled.span`
   padding-left: 2em;
@@ -94,20 +94,20 @@ export const Icons = styled.span`
 `;
 
 export const Container = styled.div`
-  background: #ffffff;
-  max-height: 100vh;
+  background: #EEEFF0;
+  min-height: 100vh;
   min-height: 100vh;
   box-shadow: 0 0 20px #bbb;
-  border-radius: 25% 0.5em 25% 0.5em;
+  border-radius: 20px;
   padding: 0 2em 0 0;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 2em;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
   right: 10%;
-  animation: ${move} 6s ease-in-out infinite;
+  /* animation: ${move} 6s ease-in-out infinite; */
   overflow: hidden;
 
   @media (max-width: 769px) {

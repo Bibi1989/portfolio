@@ -7,11 +7,11 @@ const About = () => {
     <Container>
       <H1 data-aos='fade-right'>Personal Objectives</H1>
       <P data-aos='fade-right'>
-        I Am A Full Stack Software Engineer,I Am Proficient In Html, Css, Css3,
-        React.Js, Javascript, Typescript, Node/Express.Js, MongoDB, Postgresql,
-        Restful Api, Docker, CI/CD And Graphql.I Have Done Some Web Applications
-        For Decagon Learning Institute, With Technology Like Python, React, Node
-        And Mongoose/Postgresql. And Some E- Commerce Web Applications.
+        I am a full stack software engineer,I am proficient in html, css,
+        css3, react.js, react native, vuejs, javascript, typescript, node/express.js, mongoDB,
+        postgresql, restful api and graphql. I have done some
+        web applications for decagon learning institute, fichaya, dysh and client, with technology like, react, react native, vuejs, node and mongoose/postgresql. and some personal
+        applications.
       </P>
       <TotalProject data-aos='fade-right'>
         <Icon name='book' />
