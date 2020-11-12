@@ -17,8 +17,8 @@ const Skill = () => {
         <ProgressBars width='85%' />
         <H2>REACTJS/REDUX 95%</H2>
         <ProgressBars width='95%' />
-        <H2>REACT NATIVE 65%</H2>
-        <ProgressBars width='65%' />
+        <H2>REACT NATIVE 90%</H2>
+        <ProgressBars width='90%' />
         <H2>VUE 75%</H2>
         <ProgressBars width='75%' />
         <H2>NODE/EXPRESS 90%</H2>
