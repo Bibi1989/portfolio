@@ -27,6 +27,8 @@ const Skill = () => {
         <ProgressBars width='85%' />
         <H2>POSTGRESQL 85%</H2>
         <ProgressBars width='85%' />
+        <H2>HASURA 80%</H2>
+        <ProgressBars width='80%' />
         <H2>GRAPHQL 75%</H2>
         <ProgressBars width='75%' />
       </>

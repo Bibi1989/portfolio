@@ -3,11 +3,13 @@ export const liveProjects = [
     pic: "./images/fichaya.png",
     content: "https:/fichaya.com",
     name: "Fichaya",
+    tools: ["Reactjs/Redux"],
   },
   {
     pic: "./images/dysh.png",
     content: "https://play.google.com/store/apps/details?id=com.dyshapp",
     name: "Divergent (DYSH)",
+    tools: ["Reactjs/Redux", "React-Native", "Hasura", "Node/Express", "Nextjs"],
   },
 ];
 

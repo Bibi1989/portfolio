@@ -12,7 +12,7 @@ const Portfolio = () => {
     <Container id='portfolio'>
       <H1>Live Projects</H1>
       <Row>
-        {liveProjects.map((image) => (
+        {/* {liveProjects.map((image) => (
           <Col key={image.name}>
             <Image>
               <img src={image.pic} alt='product management' />
@@ -31,6 +31,9 @@ const Portfolio = () => {
               </p>
             </Content>
           </Col>
+        ))} */}
+        {liveProjects.map((image) => (
+          <Card image={image} />
         ))}
       </Row>
       <H1>Personal Projects</H1>

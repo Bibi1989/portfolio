@@ -22,7 +22,7 @@ const Experience = () => {
         </Divide>
         <Work>
           <p data-aos='fade-right'>
-            <span>Divergent</span>
+            <span>Divergent(DYSH)</span>
             <span>Full Stack Engineer</span>
             <span>
               Responsible for building web/mobile application and consuming backend
