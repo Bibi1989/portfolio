@@ -21,11 +21,12 @@ export const Content = styled.div`
   a {
     display: block;
     padding: 0.6em 2em;
-    background: orangered;
+    background: white;
     text-align: center;
     border-radius: 0.3em;
-    color: white;
+    color: gray;
     font-size: 1.3em;
+    border: 1px solid lightgray;
   }
 
   .title {

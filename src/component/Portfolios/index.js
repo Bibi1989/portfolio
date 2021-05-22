@@ -10,33 +10,13 @@ import { liveProjects, images } from "./datas";
 const Portfolio = () => {
   return (
     <Container id='portfolio'>
-      <H1>Live Projects</H1>
+      <H1>Work Projects</H1>
       <Row>
-        {/* {liveProjects.map((image) => (
-          <Col key={image.name}>
-            <Image>
-              <img src={image.pic} alt='product management' />
-              <Overlay>
-                <Button as='a' href={image.content} target='blank'>
-                  {image.name}
-                </Button>
-              </Overlay>
-            </Image>
-            <Content>
-              <p className='title'>Name: {image.name}</p>
-              <p>
-                <a href={image.content} target='blank'>
-                  <Icon name='linkify' /> Visit
-                </a>
-              </p>
-            </Content>
-          </Col>
-        ))} */}
         {liveProjects.map((image) => (
           <Card image={image} />
         ))}
       </Row>
-      <H1>Personal Projects</H1>
+      <H1>Freelance Projects</H1>
       <Row>
         {images.map((image) => (
           <Card image={image} />
@@ -49,15 +29,14 @@ const Portfolio = () => {
 export default Portfolio;
 
 export const Container = styled.div`
-  padding: 3% 10%;
-
-  @media (max-width: 769px) {
-    padding: 3% 10px;
-  }
+  padding: 3% 16px;
+  max-width: 1440px;
+  margin: auto;
 `;
+
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
 
   @media (max-width: 769px) {

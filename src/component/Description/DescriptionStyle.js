@@ -96,7 +96,8 @@ export const Icons = styled.span`
 export const Container = styled.div`
   background: #EEEFF0;
   min-height: 100vh;
-  min-height: 100vh;
+  max-width: 1440px;
+  margin: auto;
   box-shadow: 0 0 20px #bbb;
   border-radius: 20px;
   padding: 0 2em 0 0;
@@ -105,8 +106,8 @@ export const Container = styled.div`
   gap: 2em;
   position: absolute;
   top: 20%;
-  left: 10%;
-  right: 10%;
+  left: 5%;
+  right: 5%;
   /* animation: ${move} 6s ease-in-out infinite; */
   overflow: hidden;
 
