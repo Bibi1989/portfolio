@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  width: 80%;
+  max-width: 1440px;
   padding: 0px 2%;
   background: ${(props) => (props.background ? props.background : "white")};
   display: flex;
@@ -10,8 +10,8 @@ export const Nav = styled.nav`
   box-shadow: 0 0 15px #999;
   border-radius: 0.25em;
   position: fixed;
-  left: 10%;
-  right: 10%;
+  left: 5%;
+  right: 5%;
   z-index: 20;
   top: 2%;
   transition: all 0.6s ease-in-out;
@@ -82,7 +82,7 @@ export const NavList = styled.ul`
 `;
 
 export const List = styled.li`
-  padding: 1em 2.5em;
+  padding: 19.5px 2.5em;
 
   &.active {
     border-bottom: ${(props) =>

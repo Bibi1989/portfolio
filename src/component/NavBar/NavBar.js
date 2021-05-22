@@ -10,7 +10,7 @@ const NavBar = ({ addClass, show }) => {
     contact: false,
   });
   return (
-    <Nav className={addClass ? addClass : addClass} data-aos='flip-right'>
+    <Nav className={addClass ? addClass : addClass}>
       <Logo className={addClass ? "sticky" : ""}>bibirinbulu aremieye</Logo>
       <NavList className={addClass ? "sticky" : "nav"}>
         <a href='#home' className={addClass ? "sticky" : "link"}>
