@@ -28,9 +28,13 @@ const Portfolio = () => {
 export default Portfolio;
 
 export const Container = styled.div`
-  padding: 3% 16px;
+  padding: 3% 5%;
   max-width: 1440px;
   margin: auto;
+
+  @media (max-width: 768px) {
+    padding: 2% 16px;
+  }
 `;
 
 export const Row = styled.div`
