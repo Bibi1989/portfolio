@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon } from "semantic-ui-react";
 import Card from "./Card";
 
 import {} from "./style";
@@ -9,7 +8,7 @@ import { liveProjects, images } from "./datas";
 
 const Portfolio = () => {
   return (
-    <Container id='portfolio'>
+    <Container id="portfolio">
       <H1>Work Projects</H1>
       <Row>
         {liveProjects.map((image) => (

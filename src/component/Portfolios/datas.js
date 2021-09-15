@@ -1,5 +1,11 @@
 export const liveProjects = [
   {
+    pic: "./images/tod.png",
+    content: "#",
+    name: "TechOnDemand",
+    tools: ["Reactjs", "Redux/React-Thunk", "Styled-components"],
+  },
+  {
     pic: "./images/fichaya.png",
     content: "https:/fichaya.com",
     name: "Fichaya",
@@ -9,7 +15,13 @@ export const liveProjects = [
     pic: "./images/dysh.png",
     content: "https://play.google.com/store/apps/details?id=com.dyshapp",
     name: "DYSH",
-    tools: ["Reactjs/Redux", "React-Native", "Hasura", "Node/Express", "Nextjs"],
+    tools: [
+      "Reactjs/Redux",
+      "React-Native",
+      "Hasura",
+      "Node/Express",
+      "Nextjs",
+    ],
   },
 ];
 
@@ -18,8 +30,20 @@ export const images = [
     pic: "./images/hahyv.png",
     content: "https://hahyv.com",
     name: "Hahyv",
-    tools: ["Reactjs", "Redux/React-Thunk", "Styled-components"]
-  }
+    tools: ["Reactjs", "Redux/React-Thunk", "Styled-components"],
+  },
+  {
+    pic: "./images/bestonshipping.png",
+    content: "https://hahyv.com",
+    name: "Bestoneshipping",
+    tools: [
+      "Reactjs",
+      "Node/Expressjs",
+      "Redux/React-Thunk",
+      "Styled-components",
+      "MongoDB",
+    ],
+  },
   // {
   //   pic: "./images/productmanagement.png",
   //   content: "https://b-manager.netlify.app",

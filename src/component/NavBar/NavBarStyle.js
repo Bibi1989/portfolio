@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  max-width: 1440px;
+  // max-width: 1440px;
+  width: 100%;
   padding: 0px 2%;
   background: ${(props) => (props.background ? props.background : "white")};
   display: flex;
@@ -10,10 +11,10 @@ export const Nav = styled.nav`
   box-shadow: 0 0 15px #999;
   border-radius: 0.25em;
   position: fixed;
-  left: 5%;
-  right: 5%;
+  // left: 5%;
+  // right: 5%;
   z-index: 20;
-  top: 2%;
+  top: 0%;
   transition: all 0.6s ease-in-out;
 
   &.nav-dark {

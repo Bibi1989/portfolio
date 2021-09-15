@@ -20,7 +20,7 @@ const Description = () => {
   return (
     <Container data-aos='zoom-in'>
       <Image>
-        <img src={welcome} alt='My Image' />
+        <img src={welcome} alt='My welcome pic' />
       </Image>
       <Details>
         <P1>Hi, I am</P1>
