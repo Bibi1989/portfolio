@@ -34,7 +34,7 @@ export const images = [
   },
   {
     pic: "./images/bestonshipping.png",
-    content: "https://hahyv.com",
+    content: "https://admin.bestoneshipping.co.uk",
     name: "Bestoneshipping",
     tools: [
       "Reactjs",
